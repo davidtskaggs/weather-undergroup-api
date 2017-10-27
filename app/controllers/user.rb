@@ -13,3 +13,13 @@ post "/users" do
     erb :"users/new"
   end
 end
+
+get "/users/:id" do
+  puts @locations
+  @user = User.find_by(id: params[:id])
+  @locations = Location.all
+  @locations.each do |i|
+    temp(i.city, i.state)
+  end
+  erb :'users/show'
+end

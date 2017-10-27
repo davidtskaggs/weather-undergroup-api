@@ -1,4 +1,5 @@
 get "/weather/search" do
+  @user = current_user
   erb :"weather/search"
 end
 

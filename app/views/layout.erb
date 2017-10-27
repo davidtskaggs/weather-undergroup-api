@@ -27,7 +27,7 @@
         <div class="navbar-nav">
           <% if current_user %>
           <a class="nav-item nav-link active" href="/">Home</a>
-          <a class="nav-item nav-link" href="/">Profile</a>
+          <a class="nav-item nav-link" href="/users/<%= @user.id %>">Profile</a>
           <a class="nav-item nav-link" href="/weather/search">Weather</a>
           <a class="nav-item nav-link" href="/logout">Logout</a>
           <% else %>

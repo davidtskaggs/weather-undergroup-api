@@ -1,0 +1,11 @@
+<div class="container results">
+  <% @locations.each do |i| %>
+  <% if fav_location?(i) %>
+  <ul class="list-group">
+    <li class="list-group-item"><%= "#{i.city}: #{temp(i.city, i.state)}" %></li>
+
+  </ul>
+<% end %>
+<% end %>
+</div>
+
