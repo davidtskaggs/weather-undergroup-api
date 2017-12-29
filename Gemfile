@@ -16,7 +16,6 @@ gem 'shotgun', '~>0.9.1'
 gem 'pry'
 gem 'pry-byebug'
 gem 'bcrypt'
-gem 'twilio-ruby', '~> 5.3.0'
 gem 'wunderground'
 
 group :test do
